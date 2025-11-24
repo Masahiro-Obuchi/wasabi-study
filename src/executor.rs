@@ -7,7 +7,6 @@ use alloc::boxed::Box;
 use alloc::collections::VecDeque;
 use core::fmt::Debug;
 use core::future::Future;
-use core::future::Ready;
 use core::panic::Location;
 use core::pin::Pin;
 use core::ptr::null;
