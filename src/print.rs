@@ -47,6 +47,7 @@ macro_rules! warn {
 macro_rules! error {
     ($($arg:tt)*) => ($crate::print!("[ERROR] {}:{:<3}: {}\n", file!(), line!(), format_args!($($arg)*)));
 }
+<<<<<<< HEAD
 
 fn hexdump_bytes(bytes: &[u8]) {
     let mut i = 0;
@@ -102,3 +103,5 @@ fn hexdump_bytes(bytes: &[u8]) {
 pub fn hexdump<T: Sized>(data: &T) {
     hexdump_bytes(unsafe { slice::from_raw_parts(data as *const T as *const u8, size_of::<T>()) })
 }
+=======
+>>>>>>> 308301b (add info/warn/error log)
