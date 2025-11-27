@@ -27,6 +27,7 @@ use wasabi::uefi::locate_loaded_image_protocol;
 use wasabi::uefi::EfiHandle;
 use wasabi::uefi::EfiSystemTable;
 use wasabi::warn;
+use wasabi::x86::flush_tlb;
 use wasabi::x86::init_exceptions;
 
 #[no_mangle]
