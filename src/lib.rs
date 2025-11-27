@@ -1,5 +1,6 @@
 #![no_std]
 #![feature(offset_of)]
+#![feature(option_get_or_insert_default)]
 #![feature(custom_test_frameworks)]
 #![feature(sync_unsafe_cell)]
 #![feature(const_caller_location)]
