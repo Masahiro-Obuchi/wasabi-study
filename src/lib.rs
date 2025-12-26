@@ -1,6 +1,7 @@
 #![no_std]
 #![feature(offset_of)]
 #![feature(option_get_or_insert_default)]
+#![feature(iter_advance_by)]
 #![feature(custom_test_frameworks)]
 #![feature(sync_unsafe_cell)]
 #![feature(const_caller_location)]
@@ -19,7 +20,6 @@ pub mod keyboard;
 pub mod mmio;
 pub mod mutex;
 pub mod pci;
-pub mod pin;
 pub mod print;
 pub mod qemu;
 pub mod result;
